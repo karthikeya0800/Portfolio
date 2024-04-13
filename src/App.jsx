@@ -34,7 +34,7 @@ export default function App() {
   }
 
   return (
-    <div className=' bg-red-50 text-red-950 relative pt-28 sm:pt-36 dark:bg-red-900 dark:text-red-50 dark:text-opacity-90'>
+    <div className='scroll-smooth bg-red-50 text-red-950 relative pt-28 sm:pt-36 dark:bg-red-900 dark:text-red-50 dark:text-opacity-90'>
       <header className='z-[999] relative'>
         <div className='opacity-100 transform -translate-x-1/2 translate-y-0 translate-z-0 fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full dark:bg-red-950 dark:border-black/40 dark:bg-opacity-75'></div>
         <nav className='flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0'>
@@ -480,9 +480,11 @@ export default function App() {
               <div className='vertical-timeline-element-content bounce-in bg-white bg-opacity-5 border border-gray-200 shadow-none text-left py-5 px-8'>
                 <div className='vertical-timeline-element-content-arrow border-r-4 border-white border-opacity-50'></div>
                 <h3 className='font-semibold capitalize'>
-                  Tata Consultancy Services, Hyderabad
+                  Software Developer
                 </h3>
-                <p className='font-normal !mt-0'>Wint Wealth, Bengaluru</p>
+                <p className='font-normal !mt-0'>
+                  Tata Consultancy Services, Hyderabad
+                </p>
                 <p className='!mt-1 !font-normal text-red-700 dark:text-white/75'>
                   Designed user interfaces, integrated new features into web
                   applications, and utilized ReactJS and RESTful principles.
@@ -523,7 +525,7 @@ export default function App() {
               className='h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none'
               type='email'
               required=''
-              maxlength='500'
+              maxLength='500'
               placeholder='Your email'
               name='senderEmail'
             />
@@ -532,8 +534,8 @@ export default function App() {
               name='message'
               placeholder='Your message'
               required=''
-              maxlength='5000'
-              spellcheck='false'
+              maxLength='5000'
+              spellCheck='false'
             ></textarea>
             <button
               type='submit'
@@ -576,12 +578,12 @@ export default function App() {
           </form>
         </section>
       </main>
-      <footer class='pb-5 px-4 text-center text-gray-200'>
-        <small class='mb-2 block text-xs'>
+      <footer className='pb-5 px-4 text-center text-gray-200'>
+        <small className='mb-2 block text-xs'>
           © 2024 Karthikeya. Built upon rhit.am
         </small>
-        <p class='text-xs'>
-          <span class='font-semibold'>About this website:</span> built with
+        <p className='text-xs'>
+          <span className='font-semibold'>About this website:</span> built with
           React, JavaScript, Tailwind CSS, Email JS &amp; Firebase hosting.
         </p>
       </footer>
