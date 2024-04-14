@@ -479,9 +479,7 @@ export default function App() {
               <span className='vertical-timeline-element-icon bounce-in bg-white bg-opacity-15 text-lg'></span>
               <div className='vertical-timeline-element-content bounce-in bg-white bg-opacity-5 border border-gray-200 shadow-none text-left py-5 px-8'>
                 <div className='vertical-timeline-element-content-arrow border-r-4 border-white border-opacity-50'></div>
-                <h3 className='font-semibold capitalize'>
-                  Software Developer
-                </h3>
+                <h3 className='font-semibold capitalize'>Software Developer</h3>
                 <p className='font-normal !mt-0'>
                   Tata Consultancy Services, Hyderabad
                 </p>
@@ -502,7 +500,7 @@ export default function App() {
         </section>
         <section
           id='contact'
-          className='opacity-100 mb-20 sm:mb-28 w-[min(100%,38rem)] text-center'
+          className='opacity-100 mb-20 sm:mb-28 w-[min(100%,38rem)] text-center scroll-mt-28'
         >
           <h2 className='text-3xl font-medium capitalize mb-8 text-center'>
             <div className='flex items-center justify-center'>Contact me</div>
