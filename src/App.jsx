@@ -332,7 +332,7 @@ export default function App() {
                     <br />
                     <b>
                       Link :&nbsp;
-                      <a href="http://crud-node.us.to" target="_blank">
+                      <a href="https://crud-node.run.place" target="_blank">
                         <u className="text-blue-300">CRUDapp</u>
                       </a>
                     </b>
