@@ -327,12 +327,12 @@ export default function App() {
                 <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
                   <h3 className="text-2xl font-semibold">CRUD App</h3>
                   <p className="mt-2 leading-relaxed text-red-700 dark:text-white/70">
-                    Developed a responsive web app with ReactJS, dockerized the
+                    Developed a responsive web app with ReactJS adn Django.Dockerized the
                     containers and deployed it on a Google Cloud Platform VM.
                     <br />
                     <b>
                       Link :&nbsp;
-                      <a href="https://crud-node.run.place" target="_blank">
+                      <a href="https://crud-app.run.place/django" target="_blank">
                         <u className="text-blue-300">CRUDapp</u>
                       </a>
                     </b>
@@ -342,7 +342,10 @@ export default function App() {
                       React.js
                     </li>
                     <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">
-                      Express.js
+                      Django
+                    </li>
+                    <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">
+                      MySQL
                     </li>
                     <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">
                       Next UI
