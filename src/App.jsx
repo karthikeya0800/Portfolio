@@ -56,12 +56,12 @@ export default function App() {
             <li className="opacity-100 transform-none h-3/4 flex items-center justify-center relative">
               <a
                 className="flex w-full items-center justify-center px-3 py-3 hover:text-red-950 transition dark:hover:text-red-300 text-red-950 dark:text-red-200"
-                href="#about"
-                onClick={() => setActiveNav("about")}
+                href="#opensource"
+                onClick={() => setActiveNav("opensource")}
               >
-                About
+                OS
               </a>
-              {activeNav === "about" ? (
+              {activeNav === "opensource" ? (
                 <span className="transform-none transform-origin-center bg-red-100 rounded-full absolute inset-0 -z-10 dark:bg-red-800"></span>
               ) : (
                 ""
@@ -152,7 +152,7 @@ export default function App() {
             <br />
             <br />
             <b>A software developer</b> with
-            <b> 2+ years</b> of experience, I'm passionate about
+            <b> 2.5+ years</b> of experience, I'm passionate about
             <div className="text-nowrap">Science🔭, Coding🧑‍💻,</div>
             <div className="text-nowrap">Cricket🏏, and Music🎧</div>
           </h1>
@@ -194,38 +194,51 @@ export default function App() {
         <div className="opacity-100 transform-none bg-red-200 my-10 h-16 w-1 rounded-full block dark:bg-opacity-20"></div>
         <section
           className="max-w-[45rem] text-center leading-8 mb-0 scroll-mt-28"
-          id="about"
+          id="opensource"
           opacity-100
           transform-none
         >
           <h2 className="text-3xl font-medium capitalize mb-8 text-center">
             <div className="flex items-center justify-center">
-              About me
+              Open Source
               <div className="lf-player-container"></div>
             </div>
           </h2>
-          <p className="mb-3">
-            Hi, I'm Karthikeya from Hyderabad, India.Science🔬, coding💻, and
-            music🎵 are what keep me going. Growing up in Hyderabad, I was
-            surrounded by a mix of culture and tech. From an early age, I was
-            fascinated by science, playing with gadgets, and exploring the
-            universe's secrets.
-            <br />
-            <br /> As I got more into tech, I found coding💻. It felt like
-            learning a new language that let me create and innovate in new ways.
-            I dove into programming, improving my skills and taking on
-            challenges.
-            <br />
-            <br /> When I'm not coding, I enjoy simple things in life. Whether
-            it's a game of badminton🏸 with friends or a walk in the park, I
-            love spending time outdoors. And cricket🏏? It's a sport that brings
-            people together.
-            <br />
-            <br /> I'm now exploring data science and machine learning🤖. I'm
-            not just a coder; I'm a thinker🧠, always looking for ways to make
-            life better. My motto? Every effort should help improve the nation
-            and humanity. ✨🌍
-          </p>
+          <table style={{ width: "100%", border: "1px solid black" }}>
+            <thead>
+              <tr>
+                <th className="border border-black p-2">Project Name</th>
+                <th className="border border-black p-2">Description</th>
+                <th className="border border-black p-2">URL</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-black p-1">
+                  <a
+                    href="https://invoify.vercel.app/"
+                    target="_blank"
+                    className="text-blue-400"
+                  >
+                    invoify
+                  </a>
+                </td>
+                <td className="border border-black p-1">
+                  An invoice generator app built using Next.js, Typescript, and
+                  Shadcn.
+                </td>
+                <td className="border border-black p-1">
+                  <a
+                    href="https://github.com/al1abb/invoify/pull/627"
+                    target="_blank"
+                    className="text-blue-400"
+                  >
+                    PR
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </section>
         <div className="opacity-100 transform-none bg-red-200 my-10 h-16 w-1 rounded-full block dark:bg-opacity-20"></div>
         <section id="projects" className="scroll-mt-28 ">
@@ -239,11 +252,13 @@ export default function App() {
                   <h3 className="text-2xl font-semibold">Spark Mart</h3>
                   <p className="mt-2 leading-relaxed text-red-700 dark:text-white/70">
                     Crafted a responsive online store with MERN stack,
-                    incorporating cart, login, simulated payments, and order
-                    tracking. <br />
+                    incorporating cart, login and order tracking. <br />
                     <b>
                       Link :&nbsp;
-                      <a href="https://sparkmart-b839b.web.app" target="_blank">
+                      <a
+                        href="https://spark-mart-frontend.vercel.app"
+                        target="_blank"
+                      >
                         <u className="text-blue-300">Sparkmart</u>
                       </a>
                     </b>
@@ -263,6 +278,9 @@ export default function App() {
                     </li>
                     <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">
                       Node.js
+                    </li>
+                    <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">
+                      shadcnUI
                     </li>
                   </ul>
                 </div>
@@ -327,12 +345,16 @@ export default function App() {
                 <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
                   <h3 className="text-2xl font-semibold">CRUD App</h3>
                   <p className="mt-2 leading-relaxed text-red-700 dark:text-white/70">
-                    Developed a responsive web app with ReactJS adn Django.Dockerized the
-                    containers and deployed it on a Google Cloud Platform VM.
+                    Developed a responsive web app with ReactJS adn
+                    Django.Dockerized the containers and deployed it on a Google
+                    Cloud Platform VM.
                     <br />
                     <b>
                       Link :&nbsp;
-                      <a href="https://crud-app.run.place/django" target="_blank">
+                      <a
+                        href="https://github.com/karthikeya0800/CRUD-Django"
+                        target="_blank"
+                      >
                         <u className="text-blue-300">CRUDapp</u>
                       </a>
                     </b>
